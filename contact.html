@@ -127,7 +127,7 @@
                             <h1 class="display-5 mb-4">Contact Us</h1>
                         </div>
                         <p class="mb-4">Get a Quote. We are here to assist you!</p>
-                        <form onsubmit=" sendEmail(); reset(); return false;">
+                        <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -229,35 +229,11 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <!-- <script>
+   
+   <!-- <script>-->
     
-function sendEMAIL(){
-            Email.send({
-    SecureToken : "e7d47410-e470-4669-a7df-15b2005e2715",
-    To : 'srirenugambal.3d@gmail.com',
-    From :document.getElementById("email").value,
-    Subject : "New Enquiry",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-}</script>-->
-<script>
-    function sendEmail(){
-        Email.send({
-    Host : "smtp.gmail.com",
-    Username : "kbharathikandeeban@gmail.com",
-    Password : "B1542E39547E20317D1C209A684DA94A2A59",
-    To : 'srirenugambal.3d@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Enquiry",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-    }
-</script>
+
+
 </body>
 
 </html>-
